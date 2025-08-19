@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>雙北市區公車票價計算機</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; }
+        .fare-type-container, .trip-row { margin-bottom: 20px; }
+        .trip-row select, .trip-row input { margin-right: 10px; }
+        .fare-type-container label, .trip-row label { font-weight: bold; }
+        .button-container { margin-top: 20px; }
+        .button-container button { padding: 10px 20px; cursor: pointer; margin-right: 10px; }
+        #result { margin-top: 20px; font-size: 1.5em; font-weight: bold; color: #007bff; }
+    </style>
+
+</head>
+<body>
+
+    <h1>雙北市區公車票價計算機</h1>
+
+    <p> Made by XWJWPIY(Xiang 詳)</p>
+    <p> 版本: 測試 </p>
+
+
+    <div class="fare-type-container">
+        <label for="fare_type">請選擇票種：</label>
+        <select id="fare_type">
+            <option value="full_fare">全票 (15 元)</option>
+            <option value="student_fare">學生票 (12 元)</option>
+            <option value="half_fare">半票 (8 元)</option>
+        </select>
+    </div>
+
+    <hr>
+    <h3>搭乘紀錄</h3>
+    
+    <div id="trips_container"></div>
+
+    <div class="button-container">
+        <button id="addTripBtn">新增路線</button>
+        <button id="removeLastBtn">刪除最後一項</button>
+        <button id="clearAllBtn">全部清除</button>
+    </div>
+
+    <button id="calculateBtn">計算總票價</button>
+
+    <div id="result"></div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
