@@ -1,4 +1,4 @@
-const BACKEND_URL = 'https://xwjwpiy-traffic-estimator-api.onrender.com';
+const BACKEND_URL = 'https://xwjwpiy-traffic-estimator-api.onrender.com/calculate_fare';
 const busOptions = [
     "台北市一般公車", "新北市一般公車", "幹線公車", "快速公車",
     "市民小巴", "內科專車", "跳蛙公車"
