@@ -1,3 +1,3 @@
-# traffic_estimater
+# traffic_estimator
 
-網址: https://xwjwpiy.github.io/traffic_estimator/frontend/
+前端網址: https://xwjwpiy.github.io/traffic_estimator/frontend/
