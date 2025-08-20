@@ -23,6 +23,15 @@ BUS_OPTIONS = [
     "市民小巴", "內科專車", "跳蛙公車"
 ]
 
+# 新增的健康檢查 API 端點
+@app.route('/health', methods=['GET'])
+def health_check():
+    """
+    健康檢查 API，檢查伺服器是否在線。
+    """
+    return jsonify({"status": "ok"}), 200
+
+# 車種輸入版票價計算 API
 @app.route('/calculate_fare', methods=['POST'])
 def calculate_fare():
     try:
